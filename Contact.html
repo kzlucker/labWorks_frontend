@@ -1,0 +1,354 @@
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family= News Cycle,Didact Gothic,Amiri, Montserrat Alternates">
+
+</head>
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    .header {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            background-color: black;
+            color: white;
+            width: auto;
+            height: 6%;
+
+        }
+
+        #button {
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: 150%;
+            padding-left: 5%;
+            padding-top: 0.5%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .ha {
+            margin: 0%;
+            background-color: gainsboro;
+            color: black;
+            display: grid;
+            text-align: center;
+            grid-template-columns: 14% 25% 23% 14% 14%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1% 25%;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .h1 {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            padding-left: 30%;
+        }
+
+        .h2 {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 20% 18% 62%;
+            padding-left: 15%;
+        }
+
+        .ha1 {
+            text-decoration: none;
+            color: black;
+            border-right: 2px solid darkgray;
+
+        }
+
+    .seredina {
+        position: relative;
+
+    }
+
+    .contact {
+        position: absolute;
+        top: 0%;
+        right: 10%;
+    }
+
+    form {
+        margin-left: 11%;
+    }
+
+
+    .ryiadomform {
+        display: grid;
+        grid-auto-flow: column;
+        height: 350px;
+        /* grid-column-gap: 45px ; */
+    }
+
+    .footer {
+        background-color: black;
+        color: white;
+    }
+
+    .column1 {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 15%;
+    }
+
+    .sv {
+        margin: 2% 3% 2% 10%;
+        font-size: 15px;
+    }
+
+    .column2 {
+        color: lightslategray;
+        text-align: center;
+    }
+
+    .mes {
+        position: absolute;
+        position: fixed;
+        bottom: 3%;
+        right: 2%;
+    }
+
+    .glava {
+        font-family: News Cycle;
+        margin-left: 11%;
+    }
+
+    .text {
+        margin-left: 11%;
+        padding-top: 3%;
+        font-size: 30px;
+        width: 30%;
+    }
+
+    .face {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 60%;
+    }
+
+    .loft {
+        position: absolute;
+        right: 34%;
+    }
+
+    @media screen and (max-width: 400px) {
+        header {
+                display: flex;
+                align-items: center;
+                height: 11vh;
+                background-color: black;
+                color: white;
+                width: auto;
+
+            }
+
+            #button {
+                background-color: white;
+                color: black;
+                width: 20%;
+                height: 150%;
+                padding-left: 0%;
+                padding-top: 0.5%;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .ha {
+                margin: 0%;
+                background-color: gainsboro;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                width: 95vw;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 5%;
+
+            }
+
+            a {
+                text-decoration: none;
+
+            }
+
+            .h1 {
+                display: flex;
+                align-items: center;
+                display: grid;
+                grid-template-columns: 25% 75%;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            .h2 {
+                display: flex;
+                justify-content: space-around;
+                font-size: auto;
+                padding-top: 1vh;
+                padding-left: 2%;
+            }
+
+            .ha1 {
+                text-decoration: none;
+                color: black;
+                border-right: 2px solid darkgray;
+
+            }
+
+
+
+
+
+        .footer {
+                text-align: center;
+                display: flex;
+                height: 300px;
+                background-color: black;
+                color: white;
+            }
+
+            .column1 {
+                display: grid;
+                grid-auto-flow: row;
+                grid-row-gap: 3%;
+                width: 100vw;
+
+            }
+
+            .sv {
+                padding-left: 1vw;
+                padding-right: 1vw;
+                margin: 0;
+                font-size: 10px;
+            }
+
+            .column2 {
+                color: lightslategray;
+                text-align: center;
+
+            }
+        }
+</style>
+
+<body>
+    <img class="mes" src="mes.jpg" width="50px" height="50px">
+    <div class="header">
+        <span class="h1">
+            <span style="font-size: 20px;">Loft City</span>
+            <span style="font-size: 15px; font-family: Verdana,san-serif;">Holiday Apartment in SanFransisco</span>
+        </span>
+        <span class="h2">
+            <span>info@mysite.com</span>
+            <span>123-456-7890</span>
+            <span id="button">Book now</span>
+        </span>
+    </div>
+
+    <div class="ha">
+        <a class="ha1" href="midterm.html">
+            <p class="hover">Home</p>
+        </a>
+        <a class="ha1" href="apartments.html">
+            <p class="hover">Apartments & Suites</p>
+        </a>
+        <a class="ha1" href="Nearby Attractions.html">
+            <p class="hover">Nearby Attractions</p>
+        </a>
+        <a class="ha1" href="about.html">
+            <p class="hover">About</p>
+        </a>
+        <a class="ha1" href="Contact.html">
+            <p class="hover">Contact</p>
+        </a>
+    </div>
+    <div class="glava">
+        <h1>Contact Details</h1>
+    </div>
+
+    <div class="seredina" style="background-color:gainsboro; height:383px;">
+        <p class="text">If you have any questions, please contact us by telephone or email and we'll get back to you as soon as possible. We look forward to hearing from you.
+        </p>
+        <img class="contact" src="contacts.jpg" />
+    </div>
+    <div class="ryiadomform">
+        <form>
+            <p><input style="width: 400px; height: 20px;" type="text" placeholder="Name"></p>
+            <p><input style="width: 400px; height: 20px;" type="text" placeholder="Email"></p>
+            <p><input style="width: 400px; height: 20px;" type="text" placeholder="Phone"></p>
+            <p><input style="width: 400px; height: 100px; " type="text" placeholder="Type your message here..."></p>
+            <p>
+                <button style="width: 405px; background-color: black; color: white;" type="submit">Submit</button>
+        </form>
+
+        <div class="loft">
+            <h2>Loft City</h2>
+            <p>500 Terry Francois Street</p>
+            <p> San Francisco, CA 94158</p>
+            <br>
+            <p>Tel: 123-456-7890</p>
+            <p>Fax: 123-456-7890</p>
+            <br>
+            <p>info@mysite.com</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="column1">
+            <span class="sv">
+                <h1>Contact US</h1>
+                <p>info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+                <div class="face">
+                    <a href="www.facebook.com/wix"><img src="face.jpg"></a>
+                    <a href="www.twitter.com/wix"><img src="twit.jpg"></a>
+                    <a href="pinterest.com/wixcom/"><img src="pint.jpg"></a>
+                    <a href="www.linkedin.com/company/wix/com?trk=tabs_biz_home"> <img src="in.jpg"></a>
+                </div>
+            </span>
+            <span class="sv">
+                <h1>Address</h1>
+                <p>500 Terry Francois Street</p>
+                <p>San Francisco, CA 94158</p>
+
+            </span>
+            <span class="sv">
+                <h1>We Accept</h1>
+                <img src="american.jpg">
+                <img src="mastercard.jpg">
+                <img src="visa.jpg">
+                <img src="paypal.jpg">
+            </span>
+        </div>
+    </div>
+
+    <div class="column2">
+        <span class="pc">
+            <p>© 2023 by Loft City. Proudly created with Wix.com</p>
+        </span>
+    </div>
+
+
+</body>
+
+</html>

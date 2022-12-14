@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    body {
+        background-color: white;
+        margin: 0%;
+    }
+
+    .header {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            background-color: black;
+            color: white;
+            width: auto;
+            height: 6%;
+
+        }
+
+        #button {
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: 150%;
+            padding-left: 5%;
+            padding-top: 0.5%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .ha {
+            margin: 0%;
+            background-color: gainsboro;
+            color: black;
+            display: grid;
+            text-align: center;
+            grid-template-columns: 14% 25% 23% 14% 14%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1% 25%;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .h1 {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            padding-left: 30%;
+        }
+
+        .h2 {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 20% 18% 62%;
+            padding-left: 15%;
+        }
+
+        .ha1 {
+            text-decoration: none;
+            color: black;
+            border-right: 2px solid darkgray;
+
+        }
+
+
+    .table {
+        border-bottom: 1px solid orange;
+        margin: 2% 15%;
+    }
+
+    table,
+    tr,
+    td {
+        border: 1px solid orange;
+        margin: 4% 0%;
+        border-collapse: collapse;
+    }
+
+    tr,
+    td {
+        padding: 1% 0% 1% 1%;
+    }
+
+    .icon {
+        display: inline;
+    }
+
+    .ch1 {
+        text-align: center;
+    }
+
+    .junior {
+        margin: 2% 15%;
+        border-bottom: 1px solid orange;
+        padding-bottom: 2%;
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 1.7%;
+    }
+
+    .more {
+        background-color: gray;
+        font-size: 15px;
+        position: absolute;
+        bottom: 12%;
+        right: 81.5%;
+    }
+
+    .standard {
+        margin: 2% 15%;
+        border-bottom: 1px solid orange;
+        padding-bottom: 2%;
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 1.7%;
+    }
+
+    .super {
+        margin: 2% 15%;
+        border-bottom: 1px solid orange;
+        padding-bottom: 2%;
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 1.7%;
+    }
+
+    .jj {
+        margin-right: 1%;
+        font-size: 15px;
+    }
+
+    .iconki {
+        padding-top: 2%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .footer {
+        background-color: black;
+        color: white;
+    }
+
+    .column1 {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 15%;
+    }
+
+    .sv {
+        margin: 2% 3% 2% 10%;
+        font-size: 15px;
+    }
+
+    .column2 {
+        color: lightslategray;
+        text-align: center;
+    }
+
+    .mes {
+        position: absolute;
+        position: fixed;
+        bottom: 3%;
+        right: 2%;
+    }
+
+    .our {
+        color: grey;
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 25px;
+        border-bottom: 1px solid orange;
+    }
+
+    .glava {
+        font-family: News Cycle;
+        margin-left: 11%;
+    }
+
+    .face {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 60%;
+    }
+
+    .info {
+        background-color: orange;
+        color: white;
+        padding: 7% 7%;
+        width: 100px;
+        text-align: center;
+    }
+
+    .from {
+        padding-left: 30%;
+    }
+
+    .ch2 {
+        position: relative;
+        left: 60%;
+    }
+
+    .ch3 {
+
+        position: relative;
+        left: 58%;
+    }
+
+    .ch4 {
+        position: relative;
+        left: 55%;
+    }
+
+    #select {
+        margin: 2% 16%;
+        padding: 1% 30%;
+        background-color: orange;
+        color: white;
+        border: none;
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+        position: relative;
+    }
+
+    .jun {
+        opacity: 0;
+        background-color: beige;
+        font-size: 15px;
+        position: absolute;
+        bottom: 9%;
+        left: 0%;
+    }
+
+    #infor {
+        opacity: 0;
+
+        font-size: 13px;
+        position: absolute;
+        bottom: 15%;
+        right: 74.6%;
+    }
+
+    @media(max-width:600px) {
+        header {
+            display: flex;
+            align-items: center;
+            height: 11vh;
+            background-color: black;
+            color: white;
+            width: auto;
+
+        }
+
+        #button {
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: 150%;
+            padding-left: 0%;
+            padding-top: 0.5%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .ha {
+            margin: 0%;
+            background-color: gainsboro;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            width: 95vw;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5%;
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .h1 {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .h2 {
+            display: flex;
+            justify-content: space-around;
+            font-size: auto;
+            padding-top: 1vh;
+            padding-left: 2%;
+        }
+
+        .ha1 {
+            text-decoration: none;
+            color: black;
+            border-right: 2px solid darkgray;
+
+        }
+
+
+
+
+        .footer {
+            text-align: center;
+            display: flex;
+            height: 300px;
+            background-color: black;
+            color: white;
+        }
+
+        .column1 {
+            display: grid;
+            grid-auto-flow: row;
+            grid-row-gap: 3%;
+            width: 100vw;
+
+        }
+
+        .sv {
+            padding-left: 1vw;
+            padding-right: 1vw;
+            margin: 0;
+            font-size: 10px;
+        }
+
+        .column2 {
+            color: lightslategray;
+            text-align: center;
+
+        }
+
+
+        .j:hover #infor {
+            opacity: 1;
+            position: absolute;
+            bottom: 5.8%;
+            right: 14.3%;
+            border-radius: 2px;
+        }
+
+        .j:hover .jun {
+            opacity: 1;
+            position: absolute;
+            bottom: -3%;
+            left: 14.3%;
+        }
+
+        .j {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #infor {
+            background-color: orange;
+            padding: 0.5% 1%;
+            border: none;
+        }
+
+        .our {
+            display: none;
+        }
+
+        .table {
+            display: none;
+
+        }
+
+        #select {
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+        }
+
+        .jj {
+            display: none;
+        }
+
+        .more {
+            display: none;
+        }
+
+    }
+</style>
+
+<body>
+    <!-- <div class="nav"> 
+    <label for="toggle">&#9776;</label> 
+</div> 
+<input type="checkbox" name="" id="toggle"> -->
+    <img class="mes" src="mes.jpg" width="50px" height="50px">
+    <div class="header">
+        <span class="h1">
+            <span style="font-size: 20px;">Loft City</span>
+            <span style="font-size: 15px; font-family: Verdana,san-serif;">Holiday Apartment in SanFransisco</span>
+        </span>
+        <span class="h2">
+            <span>info@mysite.com</span>
+            <span>123-456-7890</span>
+            <span id="button">Book now</span>
+        </span>
+    </div>
+
+    <div class="ha">
+        <a class="ha1" href="midterm.html">
+            <p class="hover">Home</p>
+        </a>
+        <a class="ha1" href="apartments.html">
+            <p class="hover">Apartments & Suites</p>
+        </a>
+        <a class="ha1" href="Nearby Attractions.html">
+            <p class="hover">Nearby Attractions</p>
+        </a>
+        <a class="ha1" href="about.html">
+            <p class="hover">About</p>
+        </a>
+        <a class="ha1" href="Contact.html">
+            <p class="hover">Contact</p>
+        </a>
+    </div>
+
+    <div class="glava">
+        <h1>Apartments & Suites</h1>
+    </div>
+
+    <div>
+        <p class="our">Our Rooms</p>
+    </div>
+    <div class="table">
+        <table style=" width:100%; ">
+            <tr>
+                <div class="icon">
+                    <td class="ch">Check-in<span><img class="ch2" src="календарь.jpg" width="15px" height="15px"></span>
+                    </td>
+
+                </div>
+                <div class="icon">
+                    <td class="ch">Check-out<span><img class="ch2" src="календарь.jpg" width="15px"
+                                height="15px"></span></td>
+                </div>
+
+                <td class="ch">1 Adults<span><img class="ch3" src="photo_5386843339963351079_m.jpg" width="12px"
+                            height="15px"></span></td>
+
+
+                <td class="ch">0 Kids<img class="ch4" src="photo_5386843339963351079_m.jpg" width="12px"
+                        height="15px"></span></td>
+                <td style="background-color: orange; color: white;" class="ch1">Search</td>
+            </tr>
+        </table>
+    </div>
+    <button id="select">
+        <h3>Select dates</h3>
+    </button>
+
+    <div class="junior">
+        <span class="j">
+            <img src="junior.jpg">
+            <p class="more">more info</p>
+            <p class="jun">Junior Suite</p>
+            <button id="infor">more info ></button>
+        </span>
+        <span class="jj">
+            <h3>Junior Suite</h3>
+            <p>Our Junior Suites offer breathtaking views of the city skyline.</p>
+            <li> Size: 260 sq ft</li>
+            <li> Beds: 2 Double(s)</li>
+            <div style="border-top: 1px solid orange;" class="iconki">
+                <img src="снег.jpg" width="25px" height="25px" title="A/C">
+                <img src="wifi.jpg" width="25px" height="25px" title="Wifi">
+                <img src="tv.jpg" width="25px" height="25px" title="TV">
+                <img src="safe.jpg" width="25px" height="25px" title="Safe">
+                <img src="minibar.jpg" width="25px" height="25px" title="Minibar">
+                <img src="phone.jpg" width="25px" height="25px" title="Telephone">
+                <img src="kitchen.jpg" width="25px" height="25px" title="Kitchen">
+                <img src="towels.jpg" width="25px" height="25px" title="Towels">
+            </div>
+        </span>
+        <span class="jj">
+            <p class="from">From<br> $250</p>
+            <p class="info">More Info</p>
+        </span>
+
+
+
+
+    </div>
+    <div class="standard">
+        <span class="j">
+            <img src="standard.jpg">
+            <p class="more">more info</p>
+            <p class="jun">Standars Room</p>
+            <button id="infor">more info ></button>
+
+        </span>
+        <span class="jj">
+            <h3>Standard Room</h3>
+            <p>Our Standard Rooms are the perfect combination of function and comfort.</p>
+            <li> Size: 230 sq ft</li>
+            <li> Beds: 1 Double(s)</li>
+            <div style="border-top: 1px solid orange;" class="iconki">
+                <img src="снег.jpg" width="25px" height="25px" title="A/C">
+                <img src="wifi.jpg" width="25px" height="25px" title="Wifi">
+                <img src="tv.jpg" width="25px" height="25px" title="TV">
+                <img src="safe.jpg" width="25px" height="25px" title="Safe">
+                <img src="minibar.jpg" width="25px" height="25px" title="Minibar">
+                <img src="phone.jpg" width="25px" height="25px" title="Telephone">
+                <img src="kitchen.jpg" width="25px" height="25px" title="Kitchen">
+
+            </div>
+        </span>
+        <span class="jj">
+            <p class="from">From<br> $150</p>
+            <p class="info">More Info</p>
+        </span>
+    </div>
+
+    <div class="super">
+        <span class="j">
+            <img src="super.jpg">
+            <p class="more">more info</p>
+            <p class="jun">Superior Room</p>
+            <button id="infor">more info ></button>
+        </span>
+        <span class="jj">
+            <h3>Superior Room</h3>
+            <p>Our Superior Rooms are comfortable, roomy and elegant.</p>
+            <li> Size: 280 sq ft</li>
+            <li> Beds: 1 King(s)</li>
+            <div style="border-top: 1px solid orange;" class="iconki">
+                <img src="снег.jpg" width="25px" height="25px" title="A/C">
+                <img src="wifi.jpg" width="25px" height="25px" title="Wifi">
+                <img src="tv.jpg" width="25px" height="25px" title="TV">
+                <img src="safe.jpg" width="25px" height="25px" title="Safe">
+                <img src="minibar.jpg" width="25px" height="25px" title="Minibar">
+                <img src="shower.jpg" width="25px" height="25px" title="Shower">
+                <img src="phone.jpg" width="25px" height="25px" title="Telephone">
+                <img src="bath.jpg" width="25px" height="25px" title="Bath">
+                <img src="kitchen.jpg" width="25px" height="25px" title="Kitchen">
+                <img src="workspace.jpg" width="25px" height="25px" title="Work Space">
+
+            </div>
+        </span>
+        <span class="jj">
+            <p class="from">From<br> $350</p>
+            <p class="info">More Info</p>
+        </span>
+    </div>
+
+    <div class="footer">
+        <div class="column1">
+            <span class="sv">
+                <h1>Contact US</h1>
+                <p>info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+                <div class="face">
+
+                    Merey Front end, [28.10.2022 11:50]
+                    <a href="www.facebook.com/wix"><img src="face.jpg"></a>
+                    <a href="www.twitter.com/wix"><img src="twit.jpg"></a>
+                    <a href="pinterest.com/wixcom/"><img src="pint.jpg"></a>
+                    <a href="www.linkedin.com/company/wix/com?trk=tabs_biz_home"> <img src="in.jpg"></a>
+                </div>
+            </span>
+            <span class="sv">
+                <h1>Address</h1>
+                <p>500 Terry Francois Street</p>
+                <p>San Francisco, CA 94158</p>
+
+            </span>
+            <span class="sv">
+                <h1>We Accept</h1>
+                <img src="american.jpg">
+                <img src="mastercard.jpg">
+                <img src="visa.jpg">
+                <img src="paypal.jpg">
+            </span>
+        </div>
+    </div>
+    <div>
+        <class="column2">
+            <span class="pc">
+                <p>© 2023 by Loft City. Proudly created with Wix.com</p>
+            </span>
+    </div>
+</body>
+
+</html>

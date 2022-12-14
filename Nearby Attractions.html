@@ -1,0 +1,559 @@
+<html>
+
+<head>
+    <title>Midterm</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            background-color: black;
+            color: white;
+            width: auto;
+            height: 6%;
+
+        }
+
+        #button {
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: 150%;
+            padding-left: 5%;
+            padding-top: 0.5%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .ha {
+            margin: 0%;
+            background-color: gainsboro;
+            color: black;
+            display: grid;
+            text-align: center;
+            grid-template-columns: 14% 25% 23% 14% 14%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1% 25%;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .h1 {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            padding-left: 30%;
+        }
+
+        .h2 {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 20% 18% 62%;
+            padding-left: 15%;
+        }
+
+        .ha1 {
+            text-decoration: none;
+            color: black;
+            border-right: 2px solid darkgray;
+
+        }
+
+
+        .text1 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 25vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+
+        .block1 {
+            background-color: rgba(236, 236, 236, 0.5);
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: flex;
+        }
+
+        .miniblock1 {
+            padding: 4%;
+            width: 25vw;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 30;
+        }
+
+        .miniblock2 {
+            width: 25vw;
+
+        }
+
+        .block2 {
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: flex;
+        }
+
+        .miniblock3 {
+            width: 25vw;
+        }
+
+        .miniblock4 {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 4%;
+            width: 25vw;
+            font-size: 17;
+        }
+
+        .block3 {
+            background-color: rgba(236, 236, 236, 0.5);
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: flex;
+        }
+
+        .miniblock5 {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 4%;
+            width: 25vw;
+            font-size: 20;
+        }
+
+        .miniblock6 {
+            width: 25vw;
+        }
+
+        .block4 {
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: flex;
+        }
+
+        .miniblock7 {
+            width: 25vw;
+            font-size: 25;
+        }
+
+        .miniblock8 {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 4%;
+            width: 25vw;
+            font-size: 22;
+        }
+
+        .block5 {
+            background-color: rgba(236, 236, 236, 0.5);
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: flex;
+        }
+
+        .miniblock9 {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 4%;
+            width: 25vw;
+            font-size: 17;
+        }
+
+        .miniblock10 {
+            width: 25vw;
+        }
+
+        .block6 {
+            padding-left: 25vw;
+            padding-right: 25vw;
+            display: flex;
+        }
+
+        .miniblock11 {
+            width: 25vw;
+        }
+
+        .miniblock12 {
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 4%;
+            width: 25vw;
+            font-size: 21;
+        }
+
+
+
+
+
+
+
+
+
+        .footer {
+            background-color: black;
+            color: white;
+        }
+
+        .column1 {
+            display: grid;
+            grid-auto-flow: column;
+            grid-column-gap: 150px;
+        }
+
+        .sv {
+            margin: 30px 50px 30px 50px;
+            font-size: 15px;
+        }
+
+        .column2 {
+            color: lightslategray;
+            text-align: center;
+
+        }
+
+        @media(max-width:1300px) {
+            header {
+                display: flex;
+                align-items: center;
+                height: 11vh;
+                background-color: black;
+                color: white;
+                width: auto;
+
+            }
+
+            #button {
+                background-color: white;
+                color: black;
+                width: 20%;
+                height: 150%;
+                padding-left: 0%;
+                padding-top: 0.5%;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .ha {
+                margin: 0%;
+                background-color: gainsboro;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                width: 95vw;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 5%;
+
+            }
+
+            a {
+                text-decoration: none;
+
+            }
+
+            .h1 {
+                display: flex;
+                align-items: center;
+                display: grid;
+                grid-template-columns: 25% 75%;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            .h2 {
+                display: flex;
+                justify-content: space-around;
+                font-size: auto;
+                padding-top: 1vh;
+                padding-left: 2%;
+            }
+
+            .ha1 {
+                text-decoration: none;
+                color: black;
+                border-right: 2px solid darkgray;
+
+            }
+
+            .block1 {
+                flex-direction: column;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+
+            .miniblock1 {
+                font-size: 18px;
+                width: 90vw;
+            }
+
+            .miniblock2 {
+                width: 90vw;
+            }
+
+            .block2 {
+                flex-direction: column;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            .miniblock3{
+                width: 90vw;
+            }
+            .miniblock6{
+                width: 90vw;
+            }
+            .miniblock7{
+                width: 90vw;
+            }
+            .miniblock10{
+                width: 90vw;
+            }
+            .miniblock11{
+                width: 90vw;
+            }
+
+            .miniblock4 {
+                font-size: 18px;
+                width: 90vw;
+            }
+            .miniblock5{
+                font-size: 18px;
+                width: 90vw;
+            }
+            .miniblock8{
+                font-size: 18px;
+                width: 90vw;
+            }
+            .miniblock9{
+                font-size: 18px;
+                width: 90vw;
+            }
+            .miniblock12{
+                font-size: 18px;
+                width: 90vw;
+            }
+
+            .block3 {
+                flex-direction: column;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+
+            .miniblock5 {
+                font-size: 18px;
+            }
+            .block4{
+                flex-direction: column;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            .block5{
+                flex-direction: column;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            .block6{
+                flex-direction: column;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+
+
+            .footer {
+                text-align: center;
+                display: flex;
+                height: 300px;
+                background-color: black;
+                color: white;
+            }
+
+            .column1 {
+                display: grid;
+                grid-auto-flow: row;
+                grid-row-gap: 3%;
+                width: 100vw;
+
+            }
+
+            .sv {
+                padding-left: 1vw;
+                padding-right: 1vw;
+                margin: 0;
+                font-size: 10px;
+            }
+
+            .column2 {
+                color: lightslategray;
+                text-align: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span class="h1">
+            <span style="font-size: 20px;">Loft City</span>
+            <span style="font-size: 15px; font-family: Verdana,san-serif;">Holiday Apartment in SanFransisco</span>
+        </span>
+        <span class="h2">
+            <span>info@mysite.com</span>
+            <span>123-456-7890</span>
+            <span id="button">Book now</span>
+        </span>
+    </div>
+
+    <div class="ha">
+        <a class="ha1" href="midterm.html">
+            <p class="hover">Home</p>
+        </a>
+        <a class="ha1" href="apartments.html">
+            <p class="hover">Apartments & Suites</p>
+        </a>
+        <a class="ha1" href="Nearby Attractions.html">
+            <p class="hover">Nearby Attractions</p>
+        </a>
+        <a class="ha1" href="about.html">
+            <p class="hover">About</p>
+        </a>
+        <a class="ha1" href="Contact.html">
+            <p class="hover">Contact</p>
+        </a>
+    </div>
+
+    <div class="text1">
+        <h1 style="font-weight: 100;">Nearby Attractions</h1>
+    </div>
+    <div class="block1">
+        <div class="miniblock1">
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                double click me to add your own content and make changes to the font. I’m a great place for you to tell
+                a story and let your users know a little more about you.</p>
+        </div>
+        <div class="miniblock2"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.083317104576!2d76.66686551589922!3d43.20774177913916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQodGD0LvQtdC50LzQsNC9INCU0LXQvNC40YDQtdC70Y8!5e0!3m2!1sru!2skz!4v1666719081265!5m2!1sru!2skz"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <div class="block2">
+        <div class="miniblock3"><img src="img1.webp" width="100%" height="100%"></div>
+        <div class="miniblock4">
+            <h1 style="font-weight: 100;">Mission Dolores Park</h1>
+            <br>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+                click me to add your own content and make changes to the font.This is a great space to write long text
+                about your company and your services. You can use this space to go into a little more detail about your
+                company. Talk about your team and what services you provide. Tell your visitors the story of how you
+                came up with the idea for your business and what makes you different from your competitors. Make your
+                company stand out and show your visitors who you are.</p>
+        </div>
+    </div>
+
+    <div class="block3">
+        <div class="miniblock5">
+            <h1 style="font-weight:100;">Fisherman's Wharf</h1>
+            <br>
+            <p>Fisherman's Wharf is one of San Francisco's most popular tourist areas. If this is your first visit to
+                the city and you only have a day or two to see the sights, Fisherman's Wharf is one of the best places
+                to visit. This old section, once the Little Italy of San Francisco, is known for its shops, restaurants,
+                and beautiful setting along the waterfront. The views from Pier 39 back towards the city are
+                exceptional.</p>
+        </div>
+        <div class="miniblock6"><img src="img2.png" width="100%" height="100%"></div>
+    </div>
+
+    <div class="block4">
+        <div class="miniblock7"><img src="img3.jpg" width="100%" height="100%"></div>
+        <div class="miniblock8">
+            <h1 style="font-weight:100 ;">Twin Peaks</h1>
+            <br>
+            <p>These two uninhabited hills, more than 900 feet high, have one of the finest views out over the city and
+                bay. Access is easy - you can drive to the north peak parking area, park your car, and soak up the
+                amazing vista.</p>
+        </div>
+    </div>
+
+    <div class="block5">
+        <div class="miniblock9">
+            <h1 style="font-weight:100 ;">Golden Gate Bridge</h1>
+            <br>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+                click me to add your own content and make changes to the font.This is a great space to write long text
+                about your company and your services. You can use this space to go into a little more detail about your
+                company. Talk about your team and what services you provide. Tell your visitors the story of how you
+                came up with the idea for your business and what makes you different from your competitors. Make your
+                company stand out and show your visitors who you are.</p>
+        </div>
+        <div class="miniblock10"><img src="img4.webp" width="100%" height="100%"></div>
+    </div>
+
+    <div class="block6">
+        <div class="miniblock11"><img src="img5.webp" width="100%" height="100%"></div>
+        <div class="miniblock12">
+            <h1 style="font-weight:100 ;">Chinatown</h1>
+            <br>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+                click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere
+                you like on your page. I’m a great place for you to tell a story and let your users know a little more
+                about you.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+        <div class="column1">
+            <span class="sv">
+                <h1>Contact US</h1>
+                <p>info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+                <div style="display: flex; justify-content: space-around; margin-left: -30px;" ;>
+                    <img src="face.jpg">
+                    <img src="twit.jpg">
+                    <img src="pint.jpg">
+                    <img src="in.jpg">
+                </div>
+            </span>
+            <span class="sv">
+                <h1>Address</h1>
+                <p>500 Terry Francois Street</p>
+                <p>San Francisco, CA 94158</p>
+
+            </span>
+            <span class="sv">
+                <h1>We Accept</h1>
+                <img src="american.jpg">
+                <img src="mastercard.jpg">
+                <img src="visa.jpg">
+                <img src="paypal.jpg">
+            </span>
+        </div>
+    </div>
+
+    <div class="column2">
+        <span class="pc">
+            <p>© 2023 by Loft City. Proudly created with Wix.com</p>
+        </span>
+    </div>
+</body>
+
+</html>
