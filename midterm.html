@@ -1,0 +1,654 @@
+<html>
+
+<head>
+    <title>Midterm</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            background-color: black;
+            color: white;
+            width: auto;
+            height: 6%;
+
+        }
+
+        #button {
+            background-color: white;
+            color: black;
+            width: 20%;
+            height: 150%;
+            padding-left: 5%;
+            padding-top: 0.5%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .ha {
+            margin: 0%;
+            background-color: gainsboro;
+            color: black;
+            display: grid;
+            text-align: center;
+            grid-template-columns: 14% 25% 23% 14% 14%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1% 25%;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .h1 {
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            padding-left: 30%;
+        }
+
+        .h2 {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 20% 18% 62%;
+            padding-left: 15%;
+        }
+
+        .ha1 {
+            text-decoration: none;
+            color: black;
+            border-right: 2px solid darkgray;
+
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+            width: 100%;
+            height: 60%;
+        }
+
+        .textimg {
+            position: absolute;
+            background: rgba(219, 215, 215, 0.5);
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            font-size: 200%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            height: 30%;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
+        .block1 {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 25vw;
+            margin-right: 25vw;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            text-align: center;
+        }
+
+        .text1 {
+            font-family: 'Times New Roman';
+            font-weight: 200;
+        }
+
+        .text1 span {
+            margin-top: 1vh;
+            display: block;
+        }
+
+
+        .block2 {
+            display: flex;
+            background-color: rgba(236, 236, 236, 0.5);
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 25vw;
+            padding-right: 25vw;
+            font-size: auto;
+        }
+
+        .text2 {
+            font-family: 'Times New Roman';
+        }
+
+        .text2 h1 {
+            font-weight: 100;
+        }
+
+
+
+        .block3 {
+            display: flex;
+            padding-left: 25vw;
+            padding-right: 25vw;
+        }
+
+        .miniblock1 {
+            width: 23vw;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 18;
+        }
+
+        .miniblock1 h1 {
+            font-weight: 100;
+        }
+
+
+
+        .block4 {
+            display: flex;
+            padding-left: 25vw;
+            padding-right: 25vw;
+            background-color: rgba(236, 236, 236, 0.5);
+        }
+
+        .miniblock2 {
+            width: 23vw;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .miniblock3 {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding-left: 10%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            padding-right: 10%;
+        }
+
+        .miniblock31 {
+            display: flex;
+        }
+
+        .miniblock32 {
+            display: flex;
+        }
+
+        a:hover {
+            background-color: rgba(153, 153, 153, 0.8);
+        }
+
+
+
+
+
+
+        .footer {
+            background-color: black;
+            color: white;
+        }
+
+        .column1 {
+            display: grid;
+            grid-auto-flow: column;
+            grid-column-gap: 15%;
+        }
+
+        .sv {
+            margin: 2% 3% 2% 10%;
+            font-size: 15px;
+        }
+
+        .column2 {
+            color: lightslategray;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                display: flex;
+                align-items: center;
+                height: 11vh;
+                background-color: black;
+                color: white;
+                width: auto;
+
+            }
+
+            #button {
+                background-color: white;
+                color: black;
+                width: 20%;
+                height: 150%;
+                padding-left: 0%;
+                padding-top: 0.5%;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .ha {
+                margin: 0%;
+                background-color: gainsboro;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                width: 95vw;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 5%;
+
+            }
+
+            a {
+                text-decoration: none;
+
+            }
+
+            .h1 {
+                display: flex;
+                align-items: center;
+                display: grid;
+                grid-template-columns: 25% 75%;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            .h2 {
+                display: flex;
+                justify-content: space-around;
+                font-size: auto;
+                padding-top: 1vh;
+                padding-left: 2%;
+            }
+
+            .ha1 {
+                text-decoration: none;
+                color: black;
+                border-right: 2px solid darkgray;
+
+            }
+
+            .slideshow-container {
+                position: relative;
+                margin: auto;
+                width: 100%;
+                height: 130px;
+            }
+
+            .textimg {
+                position: absolute;
+                background: rgba(219, 215, 215, 0.5);
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                font-size: 12;
+                transform: translate(-50%, -50%);
+                width: 40%;
+                height: 30%;
+            }
+
+            .block2 {
+                display: flex;
+                background-color: rgba(236, 236, 236, 0.5);
+                padding-top: 2%;
+                padding-bottom: 2%;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                font-size: 17;
+            }
+
+            .text2 {
+                font-family: 'Times New Roman';
+            }
+
+            .text2 h1 {
+                font-weight: 100;
+                font-size: 19;
+            }
+
+            .block3 {
+                display: flex;
+                flex-direction: column;
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+
+            .miniblock1 {
+                width: 90vw;
+                padding-left: 5vw;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                font-size: 18;
+            }
+
+            .miniblock11 iframe {
+                max-width: 360px;
+            }
+
+            .block4 {
+                display: flex;
+                flex-direction: column;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                background-color: rgba(236, 236, 236, 0.5);
+            }
+
+            .miniblock2 {
+                width: 90vw;
+                font-size: 13;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+
+            .miniblock3 {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                padding-left: 10%;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                padding-right: 10%;
+            }
+
+            .miniblock31 {
+                display: flex;
+            }
+
+            .miniblock32 {
+                display: flex;
+            }
+
+            a:hover {
+                background-color: rgba(153, 153, 153, 0.8);
+            }
+
+            .footer {
+                text-align: center;
+                display: flex;
+                height: 300px;
+                background-color: black;
+                color: white;
+            }
+
+            .column1 {
+                display: grid;
+                grid-auto-flow: row;
+                grid-row-gap: 3%;
+                width: 100vw;
+
+            }
+
+            .sv {
+                padding-left: 1vw;
+                padding-right: 1vw;
+                margin: 0;
+                font-size: 10px;
+            }
+
+            .column2 {
+                color: lightslategray;
+                text-align: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span class="h1">
+            <span style="font-size: 20px;">Loft City</span>
+            <span style="font-size: 15px; font-family: Verdana,san-serif;">Holiday Apartment in SanFransisco</span>
+        </span>
+        <span class="h2">
+            <span>info@mysite.com</span>
+            <span>123-456-7890</span>
+            <span id="button">Book now</span>
+        </span>
+    </div>
+
+    <div class="ha">
+        <a class="ha1" href="midterm.html">
+            <p class="hover">Home</p>
+        </a>
+        <a class="ha1" href="apartments.html">
+            <p class="hover">Apartments & Suites</p>
+        </a>
+        <a class="ha1" href="Nearby Attractions.html">
+            <p class="hover">Nearby Attractions</p>
+        </a>
+        <a class="ha1" href="about.html">
+            <p class="hover">About</p>
+        </a>
+        <a class="ha1" href="Contact.html">
+            <p class="hover">Contact</p>
+        </a>
+    </div>
+
+
+
+
+    <div class="slideshow-container">
+        <div class="textimg">
+            <h1>Loft City</h1>
+            <br>
+            <p>Feel at Home When You're Away</p>
+        </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./room1.jpg" style="width:100%;  max-height: 60vh;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="room2.jpg" style="width:100%;max-height: 60vh;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="room3.jpg" style="width:100%;max-height: 60vh;">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+
+
+    <div class="block1">
+        <div class="text1"><img src="wifi.png"><span>Free Wifi</span> </div>
+        <div class="text1"><img src="lamp.png"><span>Fully Furnished</span></div>
+        <div class="text1"><img src="parking.png"><span>Free Parking</span></div>
+        <div class="text1"><img src="plane.png"><span>Airport Transfers</span></div>
+        <div class="text1"><img src="cleaning.png"><span>Cleaning Services</span></div>
+    </div>
+
+
+    <div class="block2">
+        <div class="text2">
+            <h1>Loft City - Urban Holiday Rentals in SF </h1>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+                click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere
+                you like on your page. I’m a great place for you to tell a story and let your users know a little more
+                about you. >></p>
+        </div>
+    </div>
+
+
+    <div class="block3">
+        <div class="miniblock1">
+            <h1>Why book with us</h1>
+            <br>
+            <ul>
+                <li>500m to Union Square</li>
+                <br>
+                <li>300m to Bart Station</li>
+                <br>
+                <li>5 minutes walking to Muni</li>
+                <br>
+                <li>Private parking in the same building</li>
+                <br>
+                <li>Solarium and terrace on the roof</li>
+            </ul>
+        </div>
+        <div class="miniblock11"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.083317104576!2d76.66686551589922!3d43.20774177913916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQodGD0LvQtdC50LzQsNC9INCU0LXQvNC40YDQtdC70Y8!5e0!3m2!1sru!2skz!4v1666719081265!5m2!1sru!2skz"
+                width="470vw" height="300vh" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+
+    <div class="block4">
+        <div class="miniblock2">
+            <h1 style="font-weight: 100;">People say the nicest things…</h1>
+            <br>
+            <p style="font-family:Monaco ; font-size: 18;">“I'm a testimonial. Click to edit me and add text that says
+                something nice about you and your services. Let your customers review you and tell their friends how
+                great you are.”</p>
+            <p style="text-align: right;">Saken Serik</p>
+            <br>
+            <p style="font-family:Monaco ; font-size: 18;">“I'm a testimonial. Click to edit me and add text that says
+                something nice about you and your services.”</p>
+            <p style="text-align: right;">Zhan Zhaksylyk</p>
+            <br>
+            <p style="font-family:Monaco ; font-size: 18;">“I'm a testimonial. Click to edit me and add text that says
+                something nice about you and your services. Let your customers review you and tell their friends how
+                great you are.”</p>
+            <p style="text-align: right;">Alexandr Pushkin</p>
+        </div>
+        <div class="miniblock3">
+            <div class="miniblock31"><a target="_blank" href="https://goo.gl/maps/E6BjFysWeBv3NGCn6"
+                    style="margin-right: 1vw; margin-bottom: 1vw;"><img src="icon1.svg" width="140vw"
+                        height="140vh"></a>
+                <a target="_blank" href="https://goo.gl/maps/dFGUefsFdpzWufG69" style="margin-bottom: 1vw"><img
+                        src="icon2.webp" width="140vw" height="140vh"></a>
+            </div>
+            <div class="miniblock32"><a target="_blank" href="https://goo.gl/maps/uLPZ95ob9S46yUKG8"
+                    style="margin-right: 1vw"><img src="icon3.svg" width="140vw" height="140vh"></a>
+                <a target="_blank" href="https://goo.gl/maps/2XZVCwqur8DWPXFW6"><img src="icon4.svg" width="140vw"
+                        height="140vh"></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="column1">
+            <span class="sv">
+                <h1>Contact US</h1>
+                <p>info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+                <div class="face">
+                    <a href="www.facebook.com/wix"><img src="face.jpg"></a>
+                    <a href="www.twitter.com/wix"><img src="twit.jpg"></a>
+                    <a href="pinterest.com/wixcom/"><img src="pint.jpg"></a>
+                    <a href="www.linkedin.com/company/wix/com?trk=tabs_biz_home"> <img src="in.jpg"></a>
+                </div>
+            </span>
+            <span class="sv">
+                <h1>Address</h1>
+                <p>500 Terry Francois Street</p>
+                <p>San Francisco, CA 94158</p>
+
+            </span>
+            <span class="sv">
+                <h1>We Accept</h1>
+                <img src="american.jpg">
+                <img src="mastercard.jpg">
+                <img src="visa.jpg">
+                <img src="paypal.jpg">
+            </span>
+        </div>
+    </div>
+
+    <div class="column2">
+        <span class="pc">
+            <p>© 2023 by Loft City. Proudly created with Wix.com</p>
+        </span>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+    }
+</script>
