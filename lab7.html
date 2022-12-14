@@ -1,0 +1,109 @@
+<html>
+    <head>
+      <title>lab7</title>     
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+          }
+          .body{
+
+          }
+        .img{
+            background-image: url(./wel.jpg);
+            background-size: cover;
+            height: 100vh;
+            margin: 0px;
+        }
+        .ab{
+            font-family: 'Times New Roman';
+            text-align: center;
+            margin-left: 55px;
+            padding-top: 25px;
+            color: black;
+            line-height: 50px;
+            font-size: 40px;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wh{
+             width: 20%;
+        }
+      </style>   
+    </head>
+    <body>
+        <div class="body">
+            <div class="img">
+              <div class="ab">Register Page</div>
+              <div class="flex">
+                <form onsubmit="onSubmit(event)" action="#" class="flex"> 
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" placeholder="Please enter your email" required >
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Please enter your password" required >
+                    <label for="myfile">Select a image:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <label for="Full name">Full name:</label>
+                    <input id="Full name" type="text" placeholder="Please enter your Full name" name="Full name" required >
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required >
+                    <label for="appt">Select a Birth hour:</label>
+                    <input type="time" id="appt" name="appt" >
+                    <label for="male">Select a gender:</label>
+                    <input type="radio" id="gender" name="gender" value="Male" required >
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="gender" name="gender" value="Female" >
+                    <label for="Female">Female</label><br>
+                    <input type="radio" id="gender" name="gender" value="Helicopter" >
+                    <label for="Helicopter">Helicopter</label>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000" >
+                    <label for="country">Choose a country of birth:</label>
+                    <select name="country" id="country" >
+                        <option value="kz">Kazakhstan</option>
+                        <option value="rs">Russia</option>
+                        <option value="kg">Other</option>
+                    </select>
+                    <label for="car">Favorite car:</label>
+                    <textarea id="car" name="car" rows="4" cols="50" disabled ></textarea>
+                    <button id="myButton" type="submit"> Submit </button>
+                </form>
+            </div>
+            </div>
+            
+        </div>
+    </body>
+    <script>
+        function checkOut(){
+        console.log(localStorage.getItem('email'))
+        console.log(localStorage.getItem('pwd'))
+        console.log(localStorage.getItem('myfile'))
+        console.log(localStorage.getItem('Full name'))
+        console.log(localStorage.getItem('birthday'))
+        console.log(localStorage.getItem('appt'))
+        console.log(localStorage.getItem('gender'))
+        console.log(localStorage.getItem('country'))
+        let dannye = event.target;
+        let formdata = new FormData(dannye)
+        let form_data_obj = Object.fromEntries(formdata)
+        console.log(form_data_obj);
+        localStorage.setItem('email', form_data_obj.name)
+        localStorage.setItem('pwd',form_data_obj.password)
+        localStorage.setItem('myfile', form_data_obj.name)
+        localStorage.setItem('Full name',form_data_obj.password)
+        localStorage.setItem('birthday', form_data_obj.name)
+        localStorage.setItem('appt',form_data_obj.password)
+        localStorage.setItem('gender', form_data_obj.name)
+        localStorage.setItem('country',form_data_obj.password)
+
+        alert("The form was submitted");
+      }
+      
+          alert("The form was submitted");
+     
+      
+    </script>
+</html>
